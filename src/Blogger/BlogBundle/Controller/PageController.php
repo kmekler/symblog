@@ -27,19 +27,24 @@ class PageController extends Controller
     }
     public function contactAction()
 	{
+        $verify_email = $this->get('blogger_blog.verify_email');
+        $valid = true;
 	    $enquiry = new Enquiry();
 	    $form = $this->createForm(new EnquiryType(), $enquiry);
 
 	    $request = $this->getRequest();
 	    if ($request->getMethod() == 'POST') {
 	        $form->bind($request);
-
-	        if ($form->isValid()) {
+            if (!$verify_email->VerifyEmail($form['email']->getData())) {
+                $valid = false;
+            }
+	        if ($form->isValid() && $valid) {
 	            // Perform some action, such as sending an email
 
 	            // Redirect - This is important to prevent users re-posting
 	            // the form if they refresh the page
-	            return $this->redirect($this->generateUrl('BloggerBlogBundle_contact'));
+	            // return $this->redirect($this->generateUrl('BloggerBlogBundle_contact'));
+                return $this->redirect('http://google.com');
 	        }
 	    }
 
@@ -63,60 +68,6 @@ class PageController extends Controller
             return $this->redirect($this->generateUrl('BloggerBlogBundle_contact'));
         }
 	}
-   
-    // Get remote file contents, preferring faster cURL if available
-    function remote_get_contents($url)
-    {
-        $username   = app.verify_email.username;
-        $password   = app.verify_email.password;
-        $email      = $this->container->getParameter('blogger_blog.emails.contact_email');
-        $api_url    = 'http://api.verify-email.org/api.php?';
-                
-        $url        = $api_url . 'usr=' . $username . '&pwd=' . $password . '&check=' . $email;
-
-        $object     = json_decode(remote_get_contents($url)); // the response is received in JSON format; here we use the function remote_get_contents($url) to detect in which way to get the remote content
-        
-        echo 'The email address ' . $email . ' is ' . ($object->verify_status?'GOOD':'BAD or cannot be verified') . '  '; 
-        echo 'authentication_status - ' . $object->authentication_status . ' (your authentication status: 1 - success; 0 - invalid user)'; 
-        echo 'limit_status - ' . $object->limit_status . ' (1 - verification is not allowed, see limit_desc; 0 - not limited)'; 
-        echo 'limit_desc - ' . $object->limit_desc . ' '; 
-        echo 'verify_status - ' . $object->verify_status . ' (entered email is: 1 - OK; 0 - BAD)'; 
-        echo 'verify_status_desc - ' . $object->verify_status_desc . ' ';
-
-            if (function_exists('curl_get_contents') AND function_exists('curl_init'))
-            {
-                    return curl_get_contents($url);
-            }
-            else
-            {
-                    // A litte slower, but (usually) gets the job done
-                    return file_get_contents($url);
-            }
-    }
-
-    function curl_get_contents($url)
-    {
-            // Initiate the curl session
-            $ch = curl_init();
-            
-            // Set the URL
-            curl_setopt($ch, CURLOPT_URL, $url);
-            
-            // Removes the headers from the output
-            curl_setopt($ch, CURLOPT_HEADER, 0);
-            
-            // Return the output instead of displaying it directly
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            
-            // Execute the curl session
-            $output = curl_exec($ch);
-            
-            // Close the curl session
-            curl_close($ch);
-            
-            // Return the output as a variable
-            return $output;
-    }
     public function sidebarAction()
     {
         $em = $this->getDoctrine()

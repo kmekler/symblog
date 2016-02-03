@@ -61,16 +61,8 @@ class Enquiry
 
     public static function loadValidatorMetadata(ClassMetadata $metadata)
     {
-        $username   = 
-        $password   = 'wwvvlqhc7tfmpl';
-        $email      = 'email';
-        $api_url    = 'http://api.verify-email.org/api.php?';
-                
-        $url        = $api_url . 'usr=' . $username . '&pwd=' . $password . '&check=' . $email;
-
-        $object     = json_decode($url); 
         $metadata->addPropertyConstraint('name', new NotBlank());
-        $metadata->addPropertyConstraint('email', new Email(), $object('verify_status') == 1);
+        $metadata->addPropertyConstraint('email', new Email());
 
         $metadata->addPropertyConstraint('subject', new NotBlank());
         $metadata->addPropertyConstraint('subject', new Length(array('max' => 50)));

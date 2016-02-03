@@ -1,6 +1,14 @@
+parameters:
+    blogger_blog.verify_email.username: 'labroots_nathan'
+    blogger_blog.verify_email.password: 'wwvvlqhc7tfmpl'
+
+
 services:
     blogger_blog.twig.extension:
         class: Blogger\BlogBundle\Twig\Extensions\BloggerBlogExtension
         tags:
             - { name: twig.extension }
-    
+
+    blogger_blog.verify_email:
+        class: Blogger\BlogBundle\Model\VerifyEmail
+        

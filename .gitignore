@@ -12,4 +12,5 @@
 /composer.phar
 /app/config/parameters.yml
 /app/phpunit.xml
-/src/Blogger/BlogBundle/Resources/config/services.php
+/src/Blogger/BlogBundle/Resources/config/services.yml
+src/Blogger/BlogBundle/Model/VerifyEmail.php
