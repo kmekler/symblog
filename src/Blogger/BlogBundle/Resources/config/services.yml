@@ -3,5 +3,4 @@ services:
         class: Blogger\BlogBundle\Twig\Extensions\BloggerBlogExtension
         tags:
             - { name: twig.extension }
-    verify_email:
-        class:        Blogger\BlogBundle
+    

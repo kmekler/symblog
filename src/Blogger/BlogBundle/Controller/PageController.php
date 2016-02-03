@@ -67,8 +67,8 @@ class PageController extends Controller
     // Get remote file contents, preferring faster cURL if available
     function remote_get_contents($url)
     {
-        $username   = 'labroots_nathan';
-        $password   = 'wwvvlqhc7tfmpl';
+        $username   = app.verify_email.username;
+        $password   = app.verify_email.password;
         $email      = $this->container->getParameter('blogger_blog.emails.contact_email');
         $api_url    = 'http://api.verify-email.org/api.php?';
                 

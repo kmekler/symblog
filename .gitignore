@@ -12,4 +12,4 @@
 /composer.phar
 /app/config/parameters.yml
 /app/phpunit.xml
-/src/Blogger/BlogBundle/Entity/Enquiry.php
+/src/Blogger/BlogBundle/Resources/config/services.php
