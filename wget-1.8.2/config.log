@@ -1,0 +1,482 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:744: checking host system type
+configure:837: checking whether make sets ${MAKE}
+configure:876: checking for a BSD compatible install
+configure:936: checking for gcc
+configure:1049: checking whether the C compiler (gcc  ) works
+configure:1065: gcc -o conftest    conftest.c  1>&5
+configure:1062:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(){return(0);}
+^
+1 warning generated.
+configure:1091: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:1096: checking whether we are using GNU C
+configure:1105: gcc -E conftest.c
+configure:1124: checking whether gcc accepts -g
+configure:1169: checking how to run the C preprocessor
+configure:1190: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1249: checking for AIX
+configure:1285: checking for Cygwin environment
+configure:1301: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:1297:8: error: use of undeclared identifier '__CYGWIN32__'
+return __CYGWIN__;
+       ^
+configure:1295:20: note: expanded from macro '__CYGWIN__'
+#define __CYGWIN__ __CYGWIN32__
+                   ^
+1 error generated.
+configure: failed program was:
+#line 1290 "configure"
+#include "confdefs.h"
+
+int main() {
+
+#ifndef __CYGWIN__
+#define __CYGWIN__ __CYGWIN32__
+#endif
+return __CYGWIN__;
+; return 0; }
+configure:1318: checking for mingw32 environment
+configure:1330: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:1326:8: error: use of undeclared identifier '__MINGW32__'
+return __MINGW32__;
+       ^
+1 error generated.
+configure: failed program was:
+#line 1323 "configure"
+#include "confdefs.h"
+
+int main() {
+return __MINGW32__;
+; return 0; }
+configure:1416: checking build system type
+configure:1445: checking for ld used by GCC
+configure:1513: checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld
+configure:1530: checking for /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld option to reload object files
+configure:1542: checking for BSD-compatible nm
+configure:1580: checking whether ln -s works
+configure:1601: checking how to recognise dependant libraries
+configure:1784: checking for object suffix
+configure:1790: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:1810: checking for executable suffix
+configure:1820: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:1851: checking command to parse /usr/bin/nm output
+configure:1931: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:1934: /usr/bin/nm conftest.o | sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*\(\)\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2\3 \3/p' > conftest.nm
+cannot find nm_test_var in conftest.nm
+configure:1931: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:1934: /usr/bin/nm conftest.o | sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*\(_\)\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2\3 \3/p' > conftest.nm
+configure:1985: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c conftstm.o 1>&5
+configure:2034: checking for dlfcn.h
+configure:2044: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:2212: checking for ranlib
+configure:2279: checking for strip
+configure:2524: checking for objdir
+configure:2555: checking for gcc option to produce PIC
+configure:2707: checking if gcc PIC flag -fno-common works
+configure:2721: gcc -c  -O2 -Wall -Wno-implicit -fno-common -DPIC  conftest.c 1>&5
+configure:2777: checking if gcc static flag -static works
+configure:2792: gcc -o conftest  -O2 -Wall -Wno-implicit   -static conftest.c  1>&5
+ld: library not found for -lcrt0.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 2785 "configure"
+#include "confdefs.h"
+
+int main() {
+
+; return 0; }
+configure:2823: checking if gcc supports -c -o file.o
+configure:2842: gcc -c  -O2 -Wall -Wno-implicit -o out/conftest2.o  conftest.c 1>&5
+configure:2871: checking if gcc supports -c -o file.lo
+configure:2889: gcc -c  -O2 -Wall -Wno-implicit -c -o conftest.lo  conftest.c 1>&5
+configure:2885:5: warning: unused variable 'some_variable' [-Wunused-variable]
+int some_variable = 0;
+    ^
+1 warning generated.
+configure:2947: checking if gcc supports -fno-rtti -fno-exceptions
+configure:2960: gcc -c  -O2 -Wall -Wno-implicit -fno-rtti -fno-exceptions -c conftest.c  conftest.c 1>&5
+configure:2956:5: warning: unused variable 'some_variable' [-Wunused-variable]
+int some_variable = 0;
+    ^
+1 warning generated.
+configure:2956:5: warning: unused variable 'some_variable' [-Wunused-variable]
+int some_variable = 0;
+    ^
+1 warning generated.
+configure:2991: checking whether the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries
+configure:3679: checking how to hardcode library paths into programs
+configure:3711: checking whether stripping libraries is possible
+configure:3729: checking dynamic linker characteristics
+configure:4130: checking if libtool supports shared libraries
+configure:4138: checking whether to build shared libraries
+configure:4165: checking whether to build static libraries
+configure:5322: checking for gcc option to accept ANSI C
+configure:5355: gcc  -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:5377: checking for function prototypes
+configure:5537: checking for working const
+configure:5591: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:5565:15: warning: unused variable 's' [-Wunused-variable]
+  char const *s = 0 ? (char *) 0 : (char const *) 0;
+              ^
+configure:5585:13: warning: unused variable 'foo' [-Wunused-variable]
+  const int foo = 10;
+            ^
+configure:5547:39: warning: unused variable 'x' [-Wunused-variable]
+typedef int charset[2]; const charset x;
+                                      ^
+configure:5553:27: warning: unused variable 'zero' [-Wunused-variable]
+static struct point const zero = {0,0};
+                          ^
+configure:5567:4: warning: variable 't' is uninitialized when used here [-Wuninitialized]
+  *t++ = 0;
+   ^
+configure:5564:10: note: initialize the variable 't' to silence this warning
+  char *t;
+         ^
+          = 0
+configure:5582:16: warning: variable 'b' is uninitialized when used here [-Wuninitialized]
+  struct s *b; b->j = 5;
+               ^
+configure:5582:14: note: initialize the variable 'b' to silence this warning
+  struct s *b; b->j = 5;
+             ^
+              = 0
+6 warnings generated.
+configure:5612: checking for inline
+configure:5626: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:5652: checking for size_t
+configure:5685: checking for pid_t
+configure:5718: checking whether byte ordering is bigendian
+configure:5736: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:5751: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:5746:2: error: use of undeclared identifier 'not'
+ not big endian
+ ^
+1 error generated.
+configure: failed program was:
+#line 5740 "configure"
+#include "confdefs.h"
+#include <sys/types.h>
+#include <sys/param.h>
+int main() {
+
+#if BYTE_ORDER != BIG_ENDIAN
+ not big endian
+#endif
+; return 0; }
+configure:5810: checking size of long
+configure:5830: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:5824:11: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+  if (!f) exit(1);
+          ^
+configure:5824:11: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+configure:5825:22: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+  fprintf(f, "%d\n", sizeof(long));
+              ~~     ^~~~~~~~~~~~
+              %lu
+2 warnings generated.
+configure:5850: checking size of long long
+configure:5870: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:5864:11: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+  if (!f) exit(1);
+          ^
+configure:5864:11: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+configure:5865:22: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+  fprintf(f, "%d\n", sizeof(long long));
+              ~~     ^~~~~~~~~~~~~~~~~
+              %lu
+2 warnings generated.
+configure:5894: checking for string.h
+configure:5904: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5894: checking for stdarg.h
+configure:5904: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5894: checking for unistd.h
+configure:5904: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5894: checking for sys/time.h
+configure:5904: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5894: checking for utime.h
+configure:5904: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5894: checking for sys/utime.h
+configure:5904: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5900:10: fatal error: 'sys/utime.h' file not found
+#include <sys/utime.h>
+         ^
+1 error generated.
+configure: failed program was:
+#line 5899 "configure"
+#include "confdefs.h"
+#include <sys/utime.h>
+configure:5894: checking for pwd.h
+configure:5904: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5934: checking for termios.h
+configure:5944: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5934: checking for sys/ioctl.h
+configure:5944: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5934: checking for sys/select.h
+configure:5944: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5934: checking for sys/utsname.h
+configure:5944: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5934: checking for signal.h
+configure:5944: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:5971: checking whether time.h and sys/time.h may both be included
+configure:5985: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:5981:12: warning: unused variable 'tp' [-Wunused-variable]
+struct tm *tp;
+           ^
+1 warning generated.
+configure:6007: checking return type of signal handlers
+configure:6029: gcc -c  -O2 -Wall -Wno-implicit  conftest.c 1>&5
+configure:6025:5: warning: unused variable 'i' [-Wunused-variable]
+int i;
+    ^
+1 warning generated.
+configure:6049: checking for struct utimbuf
+configure:6077: checking for working alloca.h
+configure:6089: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6085:7: warning: unused variable 'p' [-Wunused-variable]
+char *p = alloca(2 * sizeof(int));
+      ^
+1 warning generated.
+configure:6110: checking for alloca
+configure:6143: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6139:7: warning: unused variable 'p' [-Wunused-variable]
+char *p = (char *) alloca(1);
+      ^
+1 warning generated.
+configure:6312: checking for unistd.h
+configure:6351: checking for getpagesize
+configure:6379: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6404: checking for working mmap
+configure:6552: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6483:7: warning: incompatible redeclaration of library function 'malloc' [-Wincompatible-library-redeclaration]
+char *malloc();
+      ^
+configure:6483:7: note: 'malloc' is a builtin with type 'void *(unsigned long)'
+configure:6500:3: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+                exit(1);
+                ^
+configure:6500:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+2 warnings generated.
+configure:6577: checking for strdup
+configure:6605: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6589:6: warning: incompatible redeclaration of library function 'strdup' [-Wincompatible-library-redeclaration]
+char strdup();
+     ^
+configure:6589:6: note: 'strdup' is a builtin with type 'char *(const char *)'
+1 warning generated.
+configure:6577: checking for strstr
+configure:6605: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6589:6: warning: incompatible redeclaration of library function 'strstr' [-Wincompatible-library-redeclaration]
+char strstr();
+     ^
+configure:6589:6: note: 'strstr' is a builtin with type 'char *(const char *, const char *)'
+1 warning generated.
+configure:6577: checking for strcasecmp
+configure:6605: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6589:6: warning: incompatible redeclaration of library function 'strcasecmp' [-Wincompatible-library-redeclaration]
+char strcasecmp();
+     ^
+configure:6589:6: note: 'strcasecmp' is a builtin with type 'int (const char *, const char *)'
+1 warning generated.
+configure:6577: checking for strncasecmp
+configure:6605: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6589:6: warning: incompatible redeclaration of library function 'strncasecmp' [-Wincompatible-library-redeclaration]
+char strncasecmp();
+     ^
+configure:6589:6: note: 'strncasecmp' is a builtin with type 'int (const char *, const char *, unsigned long)'
+1 warning generated.
+configure:6577: checking for strpbrk
+configure:6605: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6589:6: warning: incompatible redeclaration of library function 'strpbrk' [-Wincompatible-library-redeclaration]
+char strpbrk();
+     ^
+configure:6589:6: note: 'strpbrk' is a builtin with type 'char *(const char *, const char *)'
+1 warning generated.
+configure:6577: checking for memmove
+configure:6605: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6589:6: warning: incompatible redeclaration of library function 'memmove' [-Wincompatible-library-redeclaration]
+char memmove();
+     ^
+configure:6589:6: note: 'memmove' is a builtin with type 'void *(void *, const void *, unsigned long)'
+1 warning generated.
+configure:6632: checking for gettimeofday
+configure:6660: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6632: checking for mktime
+configure:6660: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6632: checking for strptime
+configure:6660: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6687: checking for strerror
+configure:6715: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6699:6: warning: incompatible redeclaration of library function 'strerror' [-Wincompatible-library-redeclaration]
+char strerror();
+     ^
+configure:6699:6: note: 'strerror' is a builtin with type 'char *(int)'
+1 warning generated.
+configure:6687: checking for snprintf
+configure:6715: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6699:6: warning: incompatible redeclaration of library function 'snprintf' [-Wincompatible-library-redeclaration]
+char snprintf();
+     ^
+configure:6699:6: note: 'snprintf' is a builtin with type 'int (char *, unsigned long, const char *, ...)'
+1 warning generated.
+configure:6687: checking for vsnprintf
+configure:6715: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6699:6: warning: incompatible redeclaration of library function 'vsnprintf' [-Wincompatible-library-redeclaration]
+char vsnprintf();
+     ^
+configure:6699:6: note: 'vsnprintf' is a builtin with type 'int (char *, unsigned long, const char *, __va_list_tag *)'
+1 warning generated.
+configure:6687: checking for select
+configure:6715: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6687: checking for signal
+configure:6715: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6687: checking for symlink
+configure:6715: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6687: checking for access
+configure:6715: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6687: checking for isatty
+configure:6715: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6742: checking for uname
+configure:6770: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6742: checking for gethostname
+configure:6770: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6742: checking for usleep
+configure:6770: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6796: checking for getopt_long
+configure:6824: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6854: checking for gethostbyname
+configure:6882: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:6911: checking for inet_ntoa
+configure:6939: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c  1>&5
+configure:7016: checking for socket in -lsocket
+configure:7035: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c -lsocket   1>&5
+ld: library not found for -lsocket
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 7024 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char socket();
+
+int main() {
+socket()
+; return 0; }
+configure:7185: checking for dlopen in -ldl
+configure:7204: /bin/sh ./libtool gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c -ldl   1>&5
+mkdir .libs
+gcc -o conftest -O2 -Wall -Wno-implicit conftest.c  -ldl
+configure:7232: checking for shl_load in -ldl
+configure:7251: /bin/sh ./libtool gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c -ldl  -ldl  1>&5
+gcc -o conftest -O2 -Wall -Wno-implicit conftest.c  -ldl -ldl
+Undefined symbols for architecture x86_64:
+  "_shl_load", referenced from:
+      _main in conftest-aa3ec7.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 7240 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char shl_load();
+
+int main() {
+shl_load()
+; return 0; }
+configure:7297: checking for includes
+configure:7307: gcc -E   conftest.c >/dev/null 2>conftest.out
+configure:7334: checking for RSA_new in -lcrypto
+configure:7353: /bin/sh ./libtool gcc -o conftest  -O2 -Wall -Wno-implicit    conftest.c -lcrypto  -ldl  1>&5
+gcc -o conftest -O2 -Wall -Wno-implicit conftest.c  -lcrypto -ldl
+configure:7382: checking for SSL_new in -lssl
+configure:7401: /bin/sh ./libtool gcc -o conftest  -O2 -Wall -Wno-implicit    conftest.c -lssl  -lcrypto -ldl  1>&5
+gcc -o conftest -O2 -Wall -Wno-implicit conftest.c  -lssl -lcrypto -ldl
+configure:7439: checking whether SSL libs are resolved at runtime
+configure:7453: /bin/sh ./libtool gcc -o conftest  -O2 -Wall -Wno-implicit    conftest.c -lssl -lcrypto -ldl  1>&5
+gcc -o conftest -O2 -Wall -Wno-implicit conftest.c  -lssl -lcrypto -ldl
+configure:7506: checking for md5_calc in -lmd5
+configure:7525: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c -lmd5  -lssl -lcrypto -ldl  1>&5
+ld: library not found for -lmd5
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 7514 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char md5_calc();
+
+int main() {
+md5_calc()
+; return 0; }
+configure:7583: checking whether NLS is requested
+configure:7600: checking for msgfmt
+configure:7634: checking for xgettext
+configure:7669: checking for gmsgfmt
+configure:7719: checking for locale.h
+configure:7729: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:7719: checking for libintl.h
+configure:7729: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:7725:10: fatal error: 'libintl.h' file not found
+#include <libintl.h>
+         ^
+1 error generated.
+configure: failed program was:
+#line 7724 "configure"
+#include "confdefs.h"
+#include <libintl.h>
+configure:7759: checking for gettext
+configure:7787: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c -lssl -lcrypto -ldl  1>&5
+Undefined symbols for architecture x86_64:
+  "_gettext", referenced from:
+      _main in conftest-3f00ae.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 7764 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char gettext(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char gettext();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_gettext) || defined (__stub___gettext)
+choke me
+#else
+gettext();
+#endif
+
+; return 0; }
+configure:7809: checking for gettext in -lintl
+configure:7828: gcc -o conftest  -O2 -Wall -Wno-implicit   conftest.c -lintl  -lssl -lcrypto -ldl  1>&5
+ld: library not found for -lintl
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 7817 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char gettext();
+
+int main() {
+gettext()
+; return 0; }
+configure:7896: checking for makeinfo
+configure:7938: checking for perl5
+configure:7938: checking for perl
+configure:7977: checking for pod2man
